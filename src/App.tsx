@@ -4,6 +4,7 @@ import Search from "./pages/Search";
 import Song from "./pages/Song";
 import Artist from "./pages/Artist";
 import Album from "./pages/album";
+import Playlist from "./pages/Playlist";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/song/:id" element={<Song />} />
         <Route path="/artist/:id" element={<Artist />} />
         <Route path="/album/:id" element={<Album />} />
+        <Route path="/playlist/:id" element={<Playlist />} />
       </Routes>
     </Router>
   );
