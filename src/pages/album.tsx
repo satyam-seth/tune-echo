@@ -1,3 +1,3 @@
-export default function album() {
-  return <div>album</div>;
+export default function Album() {
+  return <div>Album</div>;
 }
