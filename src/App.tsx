@@ -16,6 +16,7 @@ function App() {
         <Route path="/artist/:id" element={<Artist />} />
         <Route path="/album/:id" element={<Album />} />
         <Route path="/playlist/:id" element={<Playlist />} />
+        {/* TODO: handle 404 */}
       </Routes>
     </Router>
   );
