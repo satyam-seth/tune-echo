@@ -3,7 +3,7 @@ import Home from "./pages/Home";
 import Search from "./pages/Search";
 import Song from "./pages/Song";
 import Artist from "./pages/Artist";
-import Album from "./pages/album";
+import Album from "./pages/Album";
 
 function App() {
   return (
