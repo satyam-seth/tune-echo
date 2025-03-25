@@ -73,7 +73,7 @@ const Navbar = () => {
               display: searchOpen ? "none" : "block",
             }}
           >
-            🎵 MusicApp
+            🎵 Tune Echo
           </Typography>
 
           {/* Search Bar (Mobile Hidden) */}
