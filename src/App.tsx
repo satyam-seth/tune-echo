@@ -5,10 +5,12 @@ import Song from "./pages/Song";
 import Artist from "./pages/Artist";
 import Album from "./pages/Album";
 import Playlist from "./pages/Playlist";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
     <Router>
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/search" element={<Search />} />
