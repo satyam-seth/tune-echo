@@ -20,7 +20,7 @@ import {
   Brightness7,
   AccountCircle,
 } from "@mui/icons-material";
-import { Link, useNavigate } from "react-router";
+import { NavLink, useNavigate } from "react-router";
 
 const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -65,7 +65,7 @@ const Navbar = () => {
           {/* Logo */}
           <Typography
             variant="h6"
-            component={Link}
+            component={NavLink}
             to="/"
             sx={{
               textDecoration: "none",
@@ -111,9 +111,15 @@ const Navbar = () => {
               // TODO: Highlight current link
               <Typography
                 key={item.text}
-                component={Link}
+                component={NavLink}
                 to={item.path}
-                sx={{ color: "inherit", textDecoration: "none" }}
+                sx={{
+                  color: "inherit",
+                  textDecoration: "none",
+                  "&.active": {
+                    textDecoration: "underline",
+                  },
+                }}
               >
                 {item.text}
               </Typography>
@@ -202,9 +208,14 @@ const Navbar = () => {
               <ListItem key={item.text} disablePadding>
                 {/* TODO: Highlight current link */}
                 <ListItemButton
-                  component={Link}
+                  component={NavLink}
                   to={item.path}
                   onClick={toggleDrawer(false)}
+                  sx={{
+                    "&.active": {
+                      textDecoration: "underline",
+                    },
+                  }}
                 >
                   <ListItemText primary={item.text} />
                 </ListItemButton>
